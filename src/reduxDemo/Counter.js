@@ -4,9 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 
 const getCount = (state) => state.value;
 export const Counter = () => {
-  //selector hook return updated state when ever the state in store has been change
+  //useSelector() will also subscribe to the Redux store, and run your selector whenever an action is dispatched.
   const updatedCount = useSelector(getCount);
-  //dispatch hook
+  //This hook returns a reference to the dispatch function from the Redux store.
+  // You may use it to dispatch actions as needed.
   const dispatch = useDispatch();
 
   return (

@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Counter from "./reduxDemo/Counter";
-
 import { Provider } from "react-redux";
 import { counterReducer } from "./reduxDemo/CounterReducer";
 import { configureStore } from "@reduxjs/toolkit";
